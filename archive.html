@@ -58,12 +58,13 @@ header-img: "img/tag-bg.jpg"
                 <div class="post-preview">
                     <h4 class="post-title">
                         {{ post.date | date:"%b-%d" }}  <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
-                            {% if post.subtitle %}
+                            
+                        </a>
+                        {% if post.subtitle %}
                             <h5 class="post-subtitle">
                                 {{ post.subtitle }}
                             </h5>
-                            {% endif %}
-                        </a>
+                        {% endif %}
                     </h4>
                 </div>
                 <hr>
