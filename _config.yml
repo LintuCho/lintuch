@@ -2,9 +2,9 @@
 title: H_Chou Blog
 SEOTitle: 林途的博客 | H_Chou Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email: seanzxhan@gmail.com
 description: "这里是 @H_Chou林途 的个人博客，与你一起发现更大的世界。"
-keyword: "林途, H_Chou, Web, JavaScript, 前端, 设计"
+keyword: "林途, H_Chou, Web, JavaScript, Machine Learning, 设计"
 url: "https://lintucho.github.io/"              # your host, for absolute URL
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
 
@@ -44,7 +44,7 @@ gems: [jekyll-paginate]
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
+toc_levels: 1..2
 
 
 # Disqus settings
