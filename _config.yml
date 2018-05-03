@@ -90,8 +90,6 @@ home_posts_tag: true
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-collections:
-- 2018
 
 # Friends
 friends: [
