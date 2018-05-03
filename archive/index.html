@@ -1,11 +1,29 @@
----
+<!-- ---
 layout: "archive"
 title: "Archives"
 header-img: "img/header_img/archive-bg.png"
 comments: false
 date: 2017-03-20 20:49:56
 description: "Hey, this is archives"
+--- -->
+
+---
+title: Tags
+layout: default
+description: keep hungry keep foolish
+header-img: "img/tag-bg.jpg"
 ---
 
-> 光有好奇心而不去實踐，等於自願放棄成功機會
-> 別為自己畫地自限，Just Do It！！
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading" id="tag-heading">
+                    <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+                    <span class="subheading">{{ page.description }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
