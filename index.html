@@ -26,7 +26,7 @@ description: "一生想做浪漫极客"
         <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}">{{ tag }}</a>
         {% endfor %}
     </p>
-    <div class="tags">
+    <div id='tag_cloud' class="tags">
         {% for tag in post.tags %}
         <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}" rel="{{ 3 }}">{{ tag }}</a>
         {% endfor %}
