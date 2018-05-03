@@ -48,7 +48,7 @@ toc_levels: 1..2
 
 
 # Disqus settings
-disqus_username: hux
+# disqus_username: hux
 
 # Netease setttings
 netease_comment: false
