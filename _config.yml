@@ -84,6 +84,8 @@ widgets:         # here are widget you can use, you can comment out
 - archive
 - category
 
+home_posts_tag: true
+
 # Progressive Web Apps
 chrome-tab-theme-color: "#000000"
 service-worker: true
