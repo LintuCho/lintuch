@@ -112,16 +112,19 @@ $large                           : "only screen and (min-width: 62.5em)";
    $darker-gray: mix(#000, $gray, 60%) !default;
    $light-gray: mix(#fff, $gray, 50%) !default;
    $lighter-gray: mix(#fff, $gray, 90%) !default;
+   $lighter-red: mix(#fff, #ee5f5b, 90%);
    
    $background-color: #fff !default;
   //  $code-background-color: #fafafa !default;
    $code-background-color: $base09;
    $code-background-color-dark: $light-gray !default;
-   $text-color: $dark-gray !default;
+  //  $text-color: $dark-gray !default;
    $muted-text-color: mix(#fff, $text-color, 35%) !default;
    $border-color: $lighter-gray !default;
    $form-background-color: $lighter-gray !default;
    $footer-background-color: $lighter-gray !default;
+
+   $text-color: $lighter-red !default;
    
    $primary-color: #7a8288 !default;
    $success-color: #62c462 !default;
