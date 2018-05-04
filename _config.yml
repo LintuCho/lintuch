@@ -1,22 +1,23 @@
-title:            Site Title
+title:            Han.x Blog
 description:      Describe your website here.
-disqus_shortname: 
+disqus_shortname: "这里是 @Han.x 的个人博客，与你一起发现更大的世界。"
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:
+url: "https://lintucho.github.io/"  
+keyword: "林途, Han.x, Web, JavaScript, Machine Learning, 设计"
 
 # Owner/author information
 owner:
-  name:           Your Name
+  name:           han.x
   avatar:         avatar.jpg
   bio:            "Your bio goes here. It shouldn't be super long but a good sentence or two should suffice."
-  email:          you@email.com
+  email:          seanzxhan@email.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
   facebook:       
-  github:         
+  github:         lintucho.github.com  
   stackexchange:  
   linkedin:       
   instagram:      
