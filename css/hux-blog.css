@@ -484,14 +484,7 @@ pre code {
   letter-spacing: 0.5px;
 }
 
-/**
-* orride han.x
-*/
-.post-container-orride {
-  margin-bottom: 15px;
-  background: rgb(31, 5, 5);
-  border-radius: 2px;
-}
+
 
 
 @media only screen and (max-width: 767px) {
@@ -678,7 +671,8 @@ pre code {
 }
 .intro-header {
   background: no-repeat center center;
-  background-color: #cccccc;
+  /*background-color: #cccccc;*/
+  background-color: #290d0d;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
