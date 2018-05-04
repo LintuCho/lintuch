@@ -6,6 +6,18 @@ header-img: "img/about-bg-walle.jpg"
 multilingual: true
 ---
 
+<style type="text/css">
+    .articlecolor{
+        background: white;
+        /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); */
+        box-shadow: 0 0 0 0, 0 6px 12px rgba(rgba(#222,0.8),0.1);
+        border-radius: 3px;
+        margin-top: 20px;
+        padding: 20px;
+    }
+
+</style>
+
 <!-- Language Selector -->
 <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
     <option value="0" selected> 中文 Chinese </option>
@@ -13,13 +25,13 @@ multilingual: true
 </select>
 
 <!-- Chinese Version -->
-<div class="zh post-container">
+<div class="zh post-container articlecolor">
     {% capture about_zh %}{% include about/zh.md %}{% endcapture %}
     {{ about_zh | markdownify }}
 </div>
 
 <!-- English Version -->
-<div class="en post-container">
+<div class="en post-container articlecolor">
     {% capture about_en %}{% include about/en.md %}{% endcapture %}
     {{ about_en | markdownify }}
 </div>
