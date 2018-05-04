@@ -1,9 +1,21 @@
 ---
 title: Archives
-layout: page
+layout: default
 description: keep hungry keep foolish
 header-img: "img/tag-bg.jpg"
 ---
+
+<style type="text/css">
+    .articlecolor{
+        background: white;
+        /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); */
+        box-shadow: 0 0 0 0, 0 6px 12px rgba(rgba(#222,0.8),0.1);
+        border-radius: 3px;
+        margin-top: 50px;
+        padding: 50px;
+    }
+
+</style>
 
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
@@ -20,7 +32,7 @@ header-img: "img/tag-bg.jpg"
 </header>
 
 <!-- Main Content -->
-<div class="container">
+<div class="container articlecolor">
     <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div id='tag_cloud' class="tags">
