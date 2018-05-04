@@ -32,10 +32,10 @@ header-img: "img/tag-bg.jpg"
 </header>
 
 <!-- Main Content -->
-<div class="container articlecolor">
+<div class="container">
     <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div id='tag_cloud' class="tags">
+                <div id='tag_cloud' class="tags articlecolor">
                     {% for post in site.posts %}
                     {% unless post.next %}
                     <a href="#{{ post.date | date: '%Y' }}" title="{{ post.date | date: '%Y' }}" rel="{{ tag[1].size }}">{{ post.date | date: '%Y' }}</a>
@@ -52,7 +52,7 @@ header-img: "img/tag-bg.jpg"
                 <!-- 标签列表 -->
                 {% for post in site.posts %}
                 {% unless post.next %}
-                <div class="one-tag-list">
+                <div class="one-tag-list articlecolor">
                     <span class="fa fa-tag listing-seperator" id="{{ post.date | date: '%Y' }}">
                         <span class="tag-text">{{ post.date | date: '%Y' }}</span>
                     </span>
@@ -60,7 +60,7 @@ header-img: "img/tag-bg.jpg"
                 {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
                 {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
                 {% if year != nyear %}
-                <div class="one-tag-list">
+                <div class="one-tag-list articlecolor">
                         <span class="fa fa-tag listing-seperator" id="{{ post.date | date: '%Y' }}">
                             <span class="tag-text">{{ post.date | date: '%Y' }}</span>
                         </span>
