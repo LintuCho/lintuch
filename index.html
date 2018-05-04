@@ -16,7 +16,8 @@ description: "一生想做浪漫极客"
 </style>
 
 {% for post in paginator.posts %}
-<div class="post-preview articlecolor">
+<div class="post-preview">
+    <div class="articlecolor">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
             {{ post.title }}
@@ -38,6 +39,7 @@ description: "一生想做浪漫极客"
         <a href="{{ site.baseurl }}/tags/#{{ tag }}" title="{{ tag }}" rel="{{ 3 }}">{{ tag }}</a>
         {% endfor %}
     </div>
+</div>
 </div>
 <hr>
 {% endfor %}

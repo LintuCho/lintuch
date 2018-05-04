@@ -2,17 +2,7 @@
 layout: default
 ---
 
-<style type="text/css">
-    .articlecolor{
-        background: white;
-        /* box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); */
-        box-shadow: 0 0 0 0, 0 6px 12px rgba(rgba(#222,0.8),0.1);
-        border-radius: 3px;
-        margin-top: 50px;
-        padding: 50px;
-    }
 
-</style>
 
 <!-- Page Header -->
 <header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
@@ -30,7 +20,7 @@ layout: default
 </header>
 
 <!-- Main Content -->
-<div class="container articlecolor">
+<div class="container">
 	<div class="row">
         {% if site.sidebar == false %}
 <!-- NO SIDEBAR -->
