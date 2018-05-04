@@ -483,6 +483,17 @@ pre code {
   font-weight: normal;
   letter-spacing: 0.5px;
 }
+
+/**
+* orride han.x
+*/
+.post-container-orride {
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 2px;
+}
+
+
 @media only screen and (max-width: 767px) {
   /**
 	 * Layout
