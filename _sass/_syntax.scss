@@ -2,7 +2,13 @@
    Syntax highlighting
    ========================================================================== */
 
-div.highlighter-rouge,
+// div.highlighter-rouge,
+
+div.highlighter-rouge{
+  font-family: $monospace;
+  background: $base05;
+}
+
 figure.highlight {
   position: relative;
   margin-bottom: 1em;
