@@ -91,7 +91,7 @@ figcaption {
 
 blockquote {
 	font-family: $alt-font;
-	font-style: italic;
+	font-style: normal;
 	border-left: 8px solid $border-color;
 	padding-left: 20px;
 
@@ -99,6 +99,15 @@ blockquote {
 		margin-left: -28px;
 	}
 }
+
+code.highlighter-rouge {
+	margin: 0;
+	padding: 0.2em 0.4em;
+	color: #586e75;
+	background-color: #fafafa;
+	font-size: 14;
+	border-radius: 3px;
+  }
 
 /* 
    Code
