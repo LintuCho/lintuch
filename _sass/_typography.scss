@@ -113,17 +113,15 @@ abbr[data-original-title] {
   border-bottom: 1px dotted $text-color;
 }
 
-a{
-	color: rgba(#222,0.8);;
-}
+// a{
+// 	color: rgba(#222,0.8);;
+// }
 
 /* 
    Links
    ========================================================================== */
 
-.entery-content a,
-p a,
- { 
+a { 
 	text-decoration: none;
 	color: $link-color; 
 
