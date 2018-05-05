@@ -132,6 +132,8 @@ figure {
 
 svg:not(:root) {
   overflow: hidden; 
+  overflow-x: auto;
+	&::-webkit-scrollbar {display:none}
 }
 
 /* 

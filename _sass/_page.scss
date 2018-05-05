@@ -57,6 +57,8 @@ body {
 	width: 100%;
 	overflow: hidden;
 	position: relative;
+	overflow-x: auto;
+	&::-webkit-scrollbar {display:none}
 }
 
 .header-title {
@@ -102,6 +104,8 @@ body {
 	width: 100%;
 	height: $feature-image-height;
 	overflow: hidden;
+	overflow-x: auto;
+	&::-webkit-scrollbar {display:none}
 
 	.header-title-wrap {
 		display: table-cell;
@@ -147,6 +151,8 @@ body {
 	height: 200%;
 	min-height: $feature-image-height;
 	overflow: hidden;
+	overflow-x: auto;
+	&::-webkit-scrollbar {display:none}
 
 	&:after {
 		content: '';
