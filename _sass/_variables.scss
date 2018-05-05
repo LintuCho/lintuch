@@ -12,11 +12,14 @@ $front-page-feature-image-height : 400px; // min 150px recommended
 /* 
    Typography
    ========================================================================== */
-
+$serif: Georgia, Times, serif !default;
+$sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+   "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+$monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 $base-font                       : 'Lato', Calibri, Arial, sans-serif;
-$heading-font                    : $base-font;
-$caption-font                    : $base-font;
-$code-font                       : monospace;
+$heading-font                    : $sans-serif;
+$caption-font                    : $serif;
+$code-font                       : $monospace;
 $alt-font                        : serif;
 
 $doc-font-size                   : 16;
