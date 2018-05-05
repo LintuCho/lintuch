@@ -18,21 +18,21 @@ comments: false
 {% for item in (0..site.tags.size) %}{% unless forloop.last %}
   {% capture this_word %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
 	<article>
-	<h2 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h2>
+	<h1 id="{{ this_word }}" class="tag-heading">{{ this_word }}</h1>
 		<ul>
     {% for post in site.tags[this_word] %}{% if post.title != null %}
       <div class="one-tag-list">
         <div class="post-preview">
-          <h4 class="post-title">
+          <h2 class="post-title">
               <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
                   
               </a>
               {% if post.subtitle %}
-                  <h5 class="post-subtitle">
+                  <span class="post-subtitle">
                       {{ post.subtitle }}
-                  </h5>
+                  </span>
               {% endif %}
-          </h4>
+          </h2>
       </div>
         
       </div>
