@@ -121,7 +121,7 @@ abbr[data-original-title] {
    Links
    ========================================================================== */
 
-h1 a { 
+a { 
 	text-decoration: none;
 	color: $link-color1; 
 
@@ -144,28 +144,7 @@ h1 a {
 	}
 }
 
-p a{
-	text-decoration: none;
-	color: $link-color; 
 
-	&:visited { 
-		color: lighten($link-color, 20); 
-	}
-
-	&:hover { 
-		color: darken($link-color, 20); 
-	}
-
-	&:focus { 
-		outline: thin dotted; 
-		color: darken($link-color, 20);
-	}
-
-	&:hover, 
-	&:active { 
-		outline: 0; 
-	}
-}
 
 .link-arrow {
 	font-weight: 100;
