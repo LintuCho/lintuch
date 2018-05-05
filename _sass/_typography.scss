@@ -188,7 +188,7 @@ blockquote {
 	margin: 2em 1em 2em 0;
 	padding-left: 1em;
 	padding-right: 1em;
-
+	color: lighten($text-color, 10);
 	@media #{$medium} {
 		margin-left: -28px;
 	}
