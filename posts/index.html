@@ -16,12 +16,12 @@ comments: false
     {% if forloop.first %}
 
     <article>
-      <h2 id="{{ this_year }}-ref">{{ this_year }}</h2>
+      <h1 id="{{ this_year }}-ref">{{ this_year }}</h1>
       <ul>
     {% endif %}
     <div class="one-tag-list">
       <div class="post-preview">
-        <h4 class="post-title">
+        <h2 class="post-title">
             {{ post.date | date:"%b-%d" }}      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
                 
             </a>
@@ -30,7 +30,7 @@ comments: false
                     {{ post.subtitle }}
                 </h5>
             {% endif %}
-        </h4>
+        </h2>
     </div>
       
     </div>
@@ -43,7 +43,7 @@ comments: false
           </ul>
         </article>
         <article>
-          <h2 id="{{ next_year }}-ref" class="year-heading">{{next_year}}</h2>
+          <h1 id="{{ next_year }}-ref" class="year-heading">{{next_year}}</h1>
           <ul>
         {% endif %}
     {% endif %}
