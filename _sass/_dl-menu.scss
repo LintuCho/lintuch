@@ -313,3 +313,7 @@ All this is done for any sub-level being entered.
 .dl-menuopen li {
 	display: block
 }
+
+.dl-menuwrapper{
+	overflow-y: hidden; 
+}
