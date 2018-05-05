@@ -56,13 +56,64 @@ h6 {
 // 	font-family: $heading-font;
 // }
 
-h1 {
-	@include font-rem(28);
+/*han.x del*/
 
-	@media #{$medium} {
-		@include font-rem(32);
-	}
+// h1 {
+// 	@include font-rem(28);
+
+// 	@media #{$medium} {
+// 		@include font-rem(32);
+// 	}
+// }
+
+/*han.x add*/
+small,
+.small {
+  font-size: $type-size-6;
 }
+
+p {
+  margin-bottom: 1.3em;
+}
+
+u,
+ins {
+  text-decoration: none;
+  border-bottom: 1px solid $text-color;
+  a {
+    color: inherit;
+  }
+}
+
+del a {
+  color: inherit;
+}
+
+/* reduce orphans and widows when printing */
+
+p,
+pre,
+blockquote,
+ul,
+ol,
+dl,
+figure,
+table,
+fieldset {
+  orphans: 3;
+  widows: 3;
+}
+
+/* abbreviations */
+
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: none;
+  cursor: help;
+  border-bottom: 1px dotted $text-color;
+}
+
+
 
 /* 
    Links
@@ -128,9 +179,15 @@ figcaption {
 
 blockquote {
 	font-family: $alt-font;
-	font-style: italic;
-	border-left: 8px solid $border-color;
+	font-style: normal;
+	// border-left: 8px solid $border-color;
 	padding-left: 20px;
+
+	//han.x add
+	border-left : 0.25em solid $primary-color;
+	margin: 2em 1em 2em 0;
+	padding-left: 1em;
+	padding-right: 1em;
 
 	@media #{$medium} {
 		margin-left: -28px;
@@ -145,18 +202,34 @@ tt, code, kbd, samp, pre {
 	font-family: $code-font;
 }
 
+pre {
+	overflow-x: auto; /* add scrollbars to wide code blocks*/
+  }
+
 p > code,
 a > code,
 li > code,
 figcaption > code,
 td > code {
-  margin: 0 2px;
-	padding: 0 5px;
-  @include font-rem(12);
+//   margin: 0 2px;
+	// padding: 0 5px;
+//   @include font-rem(12);
 	line-height: 1.5;
-  border: 1px solid lighten(#000, 90);
-	background-color: lighten(#000, 95);
-	border-radius: 4px;
+//   border: 1px solid lighten(#000, 90);
+	// background-color: lighten(#000, 95);
+	// border-radius: 4px;
+// han.x add
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+	font-size: $type-size-6;
+	background: $code-background-color;
+	border-radius: $border-radius;
+  
+	&:before,
+	&:after {
+	  letter-spacing: -0.2em;
+	  content: "\00a0"; /* non-breaking space*/
+	}
 }
 
 pre {
@@ -176,3 +249,24 @@ pre {
 		border-radius: 4px;
 	}
 }
+
+/* horizontal rule */
+
+hr {
+	display: block;
+	margin: 1em 0;
+	border: 0;
+	border-top: 1px solid $border-color;
+  }
+  
+  /* lists */
+  
+  ul li,
+  ol li {
+	margin-bottom: 0.5em;
+  }
+  
+  li ul,
+  li ol {
+	margin-top: 0.5em;
+  }
