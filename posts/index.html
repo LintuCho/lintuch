@@ -6,6 +6,23 @@ comments: false
 ---
 
 
+<ul class="entry-meta inline-list">
+    {% for post in site.posts %}
+    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+    {% if forloop.first %}
+    <li><a href="#{{ this_year }}" class="tag"><span class="term">{{ this_year }}</span></a></li>
+    {% endif %}
+    {% if forloop.last %}
+    {% else %}
+        {% if this_year != next_year %}
+        <li><a href="#{{ next_year }}" class="tag"><span class="term">{{ next_year }}</span></a></li>
+        {% endif %}
+    {% endif %}
+    {% endfor %}
+
+</ul>
+
 
 
 
