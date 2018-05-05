@@ -21,7 +21,7 @@ $base-font: $sans-serif !default;
 $heading-font                    : $sans-serif;
 $caption-font                    : $serif;
 $code-font                       : $monospace;
-$alt-font                        : serif;
+$alt-font                        : $base-font;
 
 $doc-font-size                   : 16;
 $doc-line-height                 : 26;
