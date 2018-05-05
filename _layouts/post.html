@@ -32,7 +32,7 @@
         {% endif %}
         <h2><span class="entry-date date published"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></span></h2>
 
-        <span class="entry-meta inline-list">{% for tag in page.tags %}<a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a>{% unless forloop.last %}{% endunless %}{% endfor %}</span>
+        <ul class="entry-meta inline-list">{% for tag in page.tags %}<li><a href="{{ site.url }}/tags/#{{ tag }}" title="Pages tagged {{ tag }}" class="tag"><span class="term">{{ tag }}</span></a></li>{% unless forloop.last %}{% endunless %}{% endfor %}</ul>
 
 
         {% if site.reading_time %}
