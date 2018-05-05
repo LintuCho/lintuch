@@ -24,12 +24,6 @@ section {
   display: block;
 }
 
-nav{
-  overflow-y: auto;
-	// overflow-y: auto;
-
-	&::-webkit-scrollbar {display:none}
-}
 
 // Display block in IE6-9 and FF3
 // -------------------------

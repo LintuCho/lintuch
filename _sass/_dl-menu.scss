@@ -184,6 +184,10 @@
 	.dl-submenu {
 		border-radius: 3px;
 		box-shadow: 0 12px 24px rgba(#000,0.4);
+		//han.x add
+		overflow-y: auto;
+		// overflow-y: auto;
+		&::-webkit-scrollbar {display:none}
 
 		.btn {
 			margin-bottom: 0;
