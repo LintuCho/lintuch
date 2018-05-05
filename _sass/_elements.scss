@@ -16,107 +16,35 @@ hr {
    Figures and images
    ========================================================================== */
 
-// figure {
-//   margin: 0;
-//   padding-top: 10px;
-//   padding-bottom: 10px;
-//   @include clearfix();
-
-//   img {
-//     margin-bottom: 10px;
-//   }
-
-//   a { 
-
-//     img {
-//       transform: translate(0, 0);
-//       transition-duration: 0.25s;
-
-//       &:hover {
-//         transform: translate(0, -5px);
-//         box-shadow: 0 0 10px rgba($base-color, 0.2);
-//       }
-//     }
-//   }
-
-//   /* 2 columns */
-//   &.half {
-//     @media #{$large} {
-
-//       img {
-//         width: 310px;
-//         float: left;
-//         margin-right: 10px;
-//       }
-
-//       figcaption {
-//         clear: left;
-//       }
-//     }
-//   }
-
-/* Figures and images */
-
 figure {
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: start;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  margin: 2em 0;
-
-  img,
-  iframe,
-  .fluid-width-video-wrapper {
-    margin-bottom: 1em;
-  }
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  @include clearfix();
 
   img {
-    width: 100%;
-    border-radius: $border-radius;
-    -webkit-transition: $global-transition;
-    transition: $global-transition;
+    margin-bottom: 10px;
   }
 
-  > a {
-    display: block;
+  a { 
+
+    img {
+      transform: translate(0, 0);
+      transition-duration: 0.25s;
+
+      &:hover {
+        transform: translate(0, -5px);
+        box-shadow: 0 0 10px rgba($base-color, 0.2);
+      }
+    }
   }
 
+  /* 2 columns */
   &.half {
-    > a,
-    > img {
-      @include breakpoint($small) {
-        width: calc(50% - 0.5em);
-      }
-    }
-
-    figcaption {
-      width: 100%;
-    }
-  }
-
-  &.third {
-    > a,
-    > img {
-      @include breakpoint($small) {
-        width: calc(33.3333% - 0.5em);
-      }
-    }
-
-    figcaption {
-      width: 100%;
-    }
-  }
-
-
-  /* 3 columns */
-  &.third {
     @media #{$large} {
 
       img {
-        width: 200px;
+        width: 310px;
         float: left;
         margin-right: 10px;
       }
@@ -126,7 +54,79 @@ figure {
       }
     }
   }
-}
+
+/* Figures and images */
+
+// figure {
+//   display: -webkit-box;
+//   display: flex;
+//   -webkit-box-pack: justify;
+//   justify-content: space-between;
+//   -webkit-box-align: start;
+//   align-items: flex-start;
+//   flex-wrap: wrap;
+//   margin: 2em 0;
+
+//   img,
+//   iframe,
+//   .fluid-width-video-wrapper {
+//     margin-bottom: 1em;
+//   }
+
+//   img {
+//     width: 100%;
+//     border-radius: $border-radius;
+//     -webkit-transition: $global-transition;
+//     transition: $global-transition;
+//   }
+
+//   > a {
+//     display: block;
+//   }
+
+//   &.half {
+//     > a,
+//     > img {
+//       @include breakpoint($small) {
+//         width: calc(50% - 0.5em);
+//       }
+//     }
+
+//     figcaption {
+//       width: 100%;
+//     }
+//   }
+
+//   &.third {
+//     > a,
+//     > img {
+//       @include breakpoint($small) {
+//         width: calc(33.3333% - 0.5em);
+//       }
+//     }
+
+//     figcaption {
+//       width: 100%;
+//     }
+//   }
+
+
+//   /* 3 columns */
+//   &.third {
+//     @media #{$large} {
+
+//       img {
+//         width: 200px;
+//         float: left;
+//         margin-right: 10px;
+//       }
+
+//       figcaption {
+//         clear: left;
+//       }
+//     }
+//   }
+// }
 
 svg:not(:root) {
   overflow: hidden; 
