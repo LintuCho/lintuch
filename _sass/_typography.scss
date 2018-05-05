@@ -240,12 +240,12 @@ pre {
 
 	&::-webkit-scrollbar {
 		height: 12px;
-		background-color: $code-background-color;
+		background-color: $dark-gray;
 		border-radius: 0 0 4px 4px;
 	}
 
 	&::-webkit-scrollbar-thumb:horizontal {
-		background-color: $code-background-color;
+		background-color: $dark-gray;
 		border-radius: 4px;
 	}
 }
