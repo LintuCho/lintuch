@@ -238,16 +238,18 @@ pre {
 	line-height: 1.5;
 	overflow-x: auto;
 
-	&::-webkit-scrollbar {
-		height: 12px;
-		background-color: $dark-gray;
-		border-radius: 0 0 4px 4px;
-	}
+	&::-webkit-scrollbar {display:none}
 
-	&::-webkit-scrollbar-thumb:horizontal {
-		background-color: $dark-gray;
-		border-radius: 4px;
-	}
+	// &::-webkit-scrollbar {
+	// 	height: 12px;
+	// 	background-color: $dark-gray;
+	// 	border-radius: 0 0 4px 4px;
+	// }
+
+	// &::-webkit-scrollbar-thumb:horizontal {
+	// 	background-color: $dark-gray;
+	// 	border-radius: 4px;
+	// }
 }
 
 // pre {
